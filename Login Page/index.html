@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container ">
+
+        <form class="form " id="login">
+            <h1>Login</h1>
+            <div class="group usernameGroup">
+                <label for="username"class="username">Username</label><br>
+                <input type="text" class="inputForm" required autofocus name="Username" id="username" placeholder="Enter Username"><br>
+            </div>
+            <div class="group passwordGroup">
+                <label for="password" class="password">Password</label><br>
+                <input type="password" class="inputForm" required name="password" id="password" placeholder="Enter Password"><br>
+            </div>
+            <a href="#" id="linkForgotPassword">Forgot Password?</a><br>
+            <div class="btn">
+                <button href="#" type="submit">Continue</button><br>
+            </div>
+            <p class="signupForm-message">Don't have  an account?<a href="#" id="linkCreateAccount">Create Account</a></p>
+            <p id="invalidPasswordOrUsername" class="errorMessage">
+                <!-- *Invalid Username or Password -->
+            </p>
+        </form>
+
+
+        <form class="form form-hidden" id="signup">
+            <h1>Sign Up</h1>
+            <div class="group usernameGroup">
+                <label for="log-username">Username</label>
+                <input type="text" class="inputForm" required autofocus name="username" id="log-username" placeholder="Enter Username">
+            </div>
+            <div class="group emailGroup">
+                <label for="email">Email</label>
+                <input type="email" class="inputForm" required name="email" id="email" placeholder="Enter Email">
+            </div>
+            <div class="group passwordGroup">
+                <label for="log-password">Password</label>
+                <input type="password" class="inputForm" required name="password" id="log-password" placeholder="Enter Password">
+                <p id="invalidPassword-style" class="errorMessage">
+                    <!-- *Not valid (Must contain atleast one number and minimum of 8 characters)  -->
+                </p>
+            </div>
+            <div class="group confirm-passwordGroup">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="inputForm" required name="confirmPassword" id="confirmPassword" placeholder="Confirm Your Password">
+                <p id="wrong-confirmPassword" class="errorMessage">
+                    <!-- *Passwords don't match -->
+                </p>
+            </div>
+            <div class="btn">
+                <button href="#" type="submit">Continue</button>
+            </div>
+            <p class="loginForm-message">Already have  an account?<a href="#" id="linkLogin">Login</a> </p>
+        </form>
+
+
+        <form class="form form-hidden" id="forgotPassword">
+            <h1>Recover Password</h1>
+            <div class="group emailGroup">
+                <label for="recover-email">Email</label>
+                <input type="email" class="inputForm" required name="email" id="recover-email" placeholder="Enter Email">
+            </div>
+            <div class="group newPasswordGroup">
+                <label for="newPassword">New Password</label>
+                <input type="password" class="inputForm" required name="newPassword" id="newPassword" placeholder="Enter New Password">
+                <p id="invalidPassword-style" class="errorMessage">
+                    <!-- *Not valid (Must contain atleast one numeric character and minimum of eight characters)  -->
+                </p>
+            </div>
+            <div class="group confirm-passwordGroup">
+                <label for="confirmNewPassword">Confirm New Password</label>
+                <input type="password" class="inputForm" required name="confirmNewPassword" id="confirmNewPassword" placeholder="Confirm New Password">
+                <p id="wrong-confirmNewPassword" class="errorMessage">
+                    <!-- *Passwords don't match -->
+                </p>
+            </div>
+            <button href="#" type="submit">Continue</button>
+            <p class="previousForm-message"><a href="#" id="linkPrevious">Go Back</a></p>
+        </form>
+
+    </div>
+    
+    <script src="js/index.js"></script>
+
+</body>
+</html>

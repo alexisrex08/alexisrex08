@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    transition-duration: 500ms;
+}
+
+body{
+    height: 100vh;
+    background-image: url(/images/bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: grid;
+    place-content: center;
+
+    --primary-color: #1B3643;
+    --primary-color-valid: #0bb427;
+    --primary-color-error: #b00404;
+    --secondary-color: #808080;
+    --white-transparent: #ffffffd6;
+}
+
+p{
+    font-size: 15px;
+}
+
+input:focus::placeholder{
+    color: transparent;
+    transition-duration: 500ms;
+}
+
+.form-hidden{
+    display: none;
+}
+
+/* Card Box Start  */
+
+.container {
+    padding: 10px;
+    max-width: 400px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--white-transparent);
+}
+
+/* Card Box End */
+
+/* Head Start */
+
+.container h1{
+    color: var(--primary-color);
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Poppins';
+    background-image: url(../pages/main.html);
+}
+
+/* Head End */
+
+/* Input,Label Start */
+.group{
+    font-size: 20px;
+}
+
+.group label{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.group input {
+    /* display: block; */
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 15px;
+    width: 400px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    height: 20px;
+    margin: 8px 0;
+    padding: 12px 2px;
+}
+
+.group input:focus{
+    border-bottom: 2px solid var(--primary-color-valid);
+    transition-duration: 500ms;    
+}
+/* Input,Label End */
+
+
+/* Links Start */
+
+.container form > a{
+    float: right;
+}
+
+.container form a {
+    color: var(--secondary-color);
+}
+
+.container form a:hover {
+    text-decoration: none;
+    color:var(--primary-color);
+}
+
+.container form button {
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius:100px;
+    padding: 5px;
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+.container form button:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.container form button:active {
+    transform: translateY(2px);
+    transition-duration: 100ms;
+}
+
+.container form > p {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.container form p.previousForm-message{
+    margin-top: 5px;
+    float: left;
+}
+
+.container p.error-message {
+    display: flex;
+    color: var(--primary-color-error);
+}
+
+/* Links End */
